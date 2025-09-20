@@ -56,3 +56,10 @@ Currently, only sliding windows are supported for RSP-QL queries. Future version
 Moreover, the Nectar Query generated is a basic version and may require further optimization based on specific use cases and query complexities. Currently it uses only the MINUS operator to represent the difference between queries. It was used to create a Proof of Concept (PoC) and may not be the most efficient way to represent query differences in all scenarios.
 
 Future enhancements may include more sophisticated methods for query differencing and optimization.
+## License
+
+This code is copyrighted by [Ghent University - imec](https://www.ugent.be/ea/idlab/en) and released under the [MIT Licence](./LICENCE) 
+
+## Contact
+
+For any questions, please contact [Kush](mailto:mailkushbisen@gmail.com) or create an issue on the GitHub repository.
