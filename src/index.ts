@@ -1,13 +1,27 @@
-/**
- * Nectar Bee - Main entry point
- * Distilling the difference to find the nectar for SPARQL-RSPQL queries
- */
+export { QueryDiff } from './lib/QueryDiff';
 
-export { QueryProcessor } from './lib/QueryProcessor';
-export { SPARQLQuery, RSPQLQuery } from './types/Query';
-export { QueryDiffer } from './lib/QueryDiffer';
-export { NectarExtractor } from './lib/NectarExtractor';
-export * from './utils';
+export {
+  normalizeQuery,
+  extractPrefixes,
+  isValidSPARQL,
+  extractBasicGraphPatterns,
+  extractVariables,
+  removePrefixes,
+  buildMinusQuery,
+  isRSPQLQuery,
+  extractStreamInfo,
+  extractRSPQLBasicGraphPatterns,
+  buildRSPQLMinusQuery,
+  normalizeRSPQLQuery
+} from './utils/queryUtils';
 
-// Default export for convenience
-export { QueryProcessor as default } from './lib/QueryProcessor';
+export type {
+  ProcessedQuery,
+  RSPQLQuery,
+  QueryDiffOptions,
+  QueryDifference,
+  NectarResult,
+  BatchNectarResult
+} from './types';
+
+export { QueryDiff as default } from './lib/QueryDiff';

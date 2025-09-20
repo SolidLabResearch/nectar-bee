@@ -1,0 +1,45 @@
+SPARQL Performance Analysis - Statistical Summary
+Generated: 2025-09-20T17:29:07.470Z
+
+EXPERIMENT OVERVIEW:
+===================
+Total Runs: 35
+Analyzed Runs: 30 (excluded 5 warmup/cooldown)
+
+SUPER QUERY PERFORMANCE:
+========================
+Execution Time: 32.02ms ± 2.95ms
+  Range: 28.91ms - 40.67ms
+  Median: 31.32ms
+  
+Memory Usage: 4.56MB ± 1.69MB
+  Range: 2.69MB - 12.92MB
+  
+CPU Usage: 46.48ms ± 15.02ms
+  Range: 31.71ms - 87.50ms
+
+PARALLEL + JOIN PERFORMANCE:
+============================
+Total Time: 4.44ms ± 1.14ms
+  Range: 3.13ms - 9.43ms
+  Median: 4.26ms
+  
+Memory Usage: -7.40MB ± 43.15MB
+  Range: -238.19MB - 4.78MB
+  
+CPU Usage: 6.34ms ± 5.27ms
+  Range: 2.52ms - 28.33ms
+
+PERFORMANCE COMPARISON:
+=======================
+Speedup Ratio: 7.50x ± 1.34x
+  Range: 3.65x - 10.12x
+  Median: 7.46x
+
+Super Query Wins: 100.0% of runs
+Parallel Wins: 0.0% of runs
+
+STATISTICAL SIGNIFICANCE:
+========================
+Super Query is faster on average
+Average performance difference: 6.50x
